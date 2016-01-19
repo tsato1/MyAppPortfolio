@@ -5,6 +5,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -27,17 +28,11 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         spotifyStreamerButton = (Button) findViewById(R.id.btn_spotify_streamer);
-        spotifyStreamerButton.setOnClickListener(new ButtonClickListener());
         scoresAppButton = (Button) findViewById(R.id.btn_scores_app);
-        scoresAppButton.setOnClickListener(new ButtonClickListener());
         libraryAppButton = (Button) findViewById(R.id.btn_library_app);
-        libraryAppButton.setOnClickListener(new ButtonClickListener());
         buildItBiggerButton = (Button) findViewById(R.id.btn_build_it_bigger);
-        buildItBiggerButton.setOnClickListener(new ButtonClickListener());
         xyzReaderButton = (Button) findViewById(R.id.btn_xyz_reader);
-        xyzReaderButton.setOnClickListener(new ButtonClickListener());
         capstoneButton = (Button) findViewById(R.id.btn_capstone);
-        capstoneButton.setOnClickListener(new ButtonClickListener());
 
 //        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 //        fab.setOnClickListener(new View.OnClickListener() {
@@ -49,29 +44,26 @@ public class MainActivity extends AppCompatActivity {
 //        });
     }
 
-    public class ButtonClickListener implements View.OnClickListener {
-        @Override
-        public void onClick(View v) {
-            switch(v.getId()) {
-                case R.id.btn_spotify_streamer:
-                    Toast.makeText(MainActivity.this, "Spotify streamer will be launched", Toast.LENGTH_SHORT).show();
-                    break;
-                case R.id.btn_scores_app:
-                    Toast.makeText(MainActivity.this, "Score App will be launched", Toast.LENGTH_SHORT).show();
-                    break;
-                case R.id.btn_library_app:
-                    Toast.makeText(MainActivity.this, "Library App will be launched", Toast.LENGTH_SHORT).show();
-                    break;
-                case R.id.btn_build_it_bigger:
-                    Toast.makeText(MainActivity.this, "Build It Bigger will be launched", Toast.LENGTH_SHORT).show();
-                    break;
-                case R.id.btn_xyz_reader:
-                    Toast.makeText(MainActivity.this, "XYZ Reader will be launched", Toast.LENGTH_SHORT).show();
-                    break;
-                case R.id.btn_capstone:
-                    Toast.makeText(MainActivity.this, "Capstone App will be launched", Toast.LENGTH_SHORT).show();
-                    break;
-            }
+    public void onClick(View v) {
+        switch(v.getId()) {
+            case R.id.btn_spotify_streamer:
+                Toast.makeText(MainActivity.this, "Spotify streamer will be launched", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btn_scores_app:
+                Toast.makeText(MainActivity.this, "Score App will be launched", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btn_library_app:
+                Toast.makeText(MainActivity.this, "Library App will be launched", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btn_build_it_bigger:
+                Toast.makeText(MainActivity.this, "Build It Bigger will be launched", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btn_xyz_reader:
+                Toast.makeText(MainActivity.this, "XYZ Reader will be launched", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btn_capstone:
+                Toast.makeText(MainActivity.this, "Capstone App will be launched", Toast.LENGTH_SHORT).show();
+                break;
         }
     }
 
