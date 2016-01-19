@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -15,5 +17,61 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+        android:text="@string/txv_my_nanodegree_apps"
+        android:textSize="@dimen/txv_size"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp" />
+    <Button
+        android:id="@+id/btn_spotify_streamer"
+        android:layout_width="@dimen/btn_width"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_spotify_streamer"
+        android:background="@color/udacity_orange" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding" />
+    <Button
+        android:id="@+id/btn_scores_app"
+        android:layout_width="@dimen/btn_width"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_scores_app"
+        android:background="@color/udacity_orange"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding" />
+    <Button
+        android:id="@+id/btn_library_app"
+        android:layout_width="@dimen/btn_width"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_library_app"
+        android:background="@color/udacity_orange"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding" />
+    <Button
+        android:id="@+id/btn_build_it_bigger"
+        android:layout_width="@dimen/btn_width"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_build_it_bigger"
+        android:background="@color/udacity_orange"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding" />
+    <Button
+        android:id="@+id/btn_xyz_reader"
+        android:layout_width="@dimen/btn_width"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_xyz_reader"
+        android:background="@color/udacity_orange"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding" />
+    <Button
+        android:id="@+id/btn_capstone"
+        android:layout_width="@dimen/btn_width"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_capstone"
+        android:textColor="@color/white"
+        android:background="@color/colorAccent"/>
+</LinearLayout>
